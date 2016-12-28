@@ -1,0 +1,16 @@
+group 'org.vmd408'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.glassfish.jersey.core', name: 'jersey-server', version: '2.25'
+    compile group: 'io.dropwizard', name: 'dropwizard-core',  version: '1.0.5'
+    compile group: 'com.hubspot.dropwizard', name: 'dropwizard-guice', version: '1.0.0.1'
+}
