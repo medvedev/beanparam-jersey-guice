@@ -1,10 +1,7 @@
 package com.github.medvedev;
 
 import javax.inject.Singleton;
-import javax.ws.rs.BeanParam;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
+import javax.ws.rs.*;
 
 @Singleton
 @Path("/")
@@ -23,7 +20,7 @@ public class Resource {
 
     @GET
     @Path("/q")
-    public String echoQueryParam(@PathParam("foo") String foo) {
+    public String echoQueryParam(@QueryParam("foo") String foo) {
         return foo;
     }
     
